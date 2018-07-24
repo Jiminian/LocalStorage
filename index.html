@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+<head>
+
+	<script src="app/Estudiante.js"></script>
+	<script src="app/Formulario.js"></script>
+	<title></title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	 crossorigin="anonymous">
+</head>
+
+<body>
+	 <div class="container-fluid">
+
+        <div class="row">
+
+            <h1>Registro de Estudiante</h1>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md">
+
+                <form>
+
+                    <div class="classWithPad">
+
+                        <div class="form-group">
+                            <label>Nombre:</label>  
+                            <input type="text" name="nombre" id="nombre" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Matricula:</label>
+                            <input type="text" name="matricula" id="matricula" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Identificacion:</label>
+                            <input type="text" name="identificacion" id="identificacion" class="form-control">
+                        </div>
+
+                        <button type="button" class="btn btn-primary" onclick="leerEstudiante();">Agregar</button>
+                    
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="col-md-8">
+                <div class="classWithPad">
+                    <table class="table table-bordered table-striped text-center" id="tabla_estudiante">
+
+                        <thead>
+                            <th>Nombre</th>
+                            <th>Matricula</th>
+                            <th>Identificacion</th>
+                        </thead>
+
+                        <tbody> </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
